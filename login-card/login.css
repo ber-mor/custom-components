@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #4E4E4E;
+  background-color: snow;
+  margin: 0 auto;
+  max-width: 80%;
+  background-image: url("back.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-card{
+  padding-top: 40%;
+}
+
+.img-card img{
+  width: 100%;
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.card {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 10%;
+  background-color: rgba(255,255,255,1);
+  
+  border-radius: 15px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+
+  height: 60vh;
+}
+
+.title{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+label{
+  text-align: left;
+}
+
+a{
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+button{
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: #5F97FF;
+  border-radius: 5px;
+  height: 30px;
+  color: white;
+}
+
+button:focus{
+  outline: none;
+}
+
+button:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 12px;
+
+  align-items: center;
+}
+
+.container .img-card {
+  grid-column: 3 /  6;
+}
+
+.container .login-form {
+  grid-column: 6 / 11;
+}
+
+input{
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #4E4E4E;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  padding-bottom: 3px;
+  background-color: transparent;
+}
+
+input:focus{
+  outline:none;
+}
